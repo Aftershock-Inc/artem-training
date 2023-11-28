@@ -1,6 +1,6 @@
-import { Link } from "gatsby"
+import {Link} from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { css } from "@emotion/react"
+import {css} from "@emotion/react"
 import styled from "@emotion/styled"
 
 const styledLink = css`

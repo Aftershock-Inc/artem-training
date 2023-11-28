@@ -1,12 +1,9 @@
 import React from "react"
 import * as S from "./about-hero.styles"
-import CustomBgImage from "../../components/custom-bg-image/custom-bg-image.component.jsx"
-import Container from "@mui/material/Container"
 
 import Grid from "@mui/material/Grid"
 
-import { graphql, useStaticQuery } from "gatsby"
-import { Button } from "@mui/material"
+import {graphql, useStaticQuery} from "gatsby"
 
 const AboutHero = () => {
   const staticQuery = useStaticQuery(graphql`

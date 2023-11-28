@@ -2,12 +2,7 @@ import React from "react"
 
 import * as S from "./footer.styles"
 
-import InstagramIcon from "@mui/icons-material/Instagram"
-import FacebookIcon from "@mui/icons-material/Facebook"
-import TwitterIcon from "@mui/icons-material/Twitter"
-
 import { graphql, useStaticQuery } from "gatsby"
-import { Container } from "@mui/system"
 
 const Footer = ({ className }) => {
   const staticQuery = useStaticQuery(graphql`
@@ -26,20 +21,25 @@ const Footer = ({ className }) => {
   `)
 
   return (
-    <S.Wrapper className={className}>
-      <S.LeftWrapper>
-        {" "}
-        <S.LogoImage img={staticQuery.logo} />
-        <S.LogoText>Veteran Owned Buisiness</S.LogoText>
-      </S.LeftWrapper>
-        <S.LogoPalmImage img={staticQuery.palm}/>
-      <S.RightWrapper>
-        <S.Link>Privacy & Terms</S.Link>
-        <S.Link>INSTAGRAM</S.Link>
-        <S.Link>FACEBOOK</S.Link>
-        <S.Link>TIKTOK</S.Link>
-      </S.RightWrapper>
-    </S.Wrapper>
+    <S.FooterAndTradeMarkWrapper>
+      <S.Wrapper className={className}>
+        <S.LeftWrapper>
+          {" "}
+          <S.LogoWrapper>
+            <S.LogoImage img={staticQuery.logo} />
+            <S.LogoText>Veteran Owned Business</S.LogoText>
+          </S.LogoWrapper>
+        </S.LeftWrapper>
+        <S.LogoPalmImage img={staticQuery.palm} />
+        <S.RightWrapper>
+          <S.Link>Privacy & Terms</S.Link>
+          <S.Link>INSTAGRAM</S.Link>
+          <S.Link>FACEBOOK</S.Link>
+          <S.Link>TIKTOK</S.Link>
+        </S.RightWrapper>
+      </S.Wrapper>
+      <S.TradeMark>© 2023 CANNA RETREAT</S.TradeMark>
+    </S.FooterAndTradeMarkWrapper>
   )
 }
 

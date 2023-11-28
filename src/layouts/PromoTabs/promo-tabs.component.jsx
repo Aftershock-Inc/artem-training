@@ -1,18 +1,15 @@
 // App.js
 
-import React, { useState } from "react"
+import React from "react"
 import * as S from "./promo-tabs.styles.jsx"
-import PropTypes from "prop-types"
-import Tabs from "@mui/material/Tabs"
-import Tab from "@mui/material/Tab"
 import Typography from "@mui/material/Typography"
 import Box from "@mui/material/Box"
 import Grid from "@mui/material/Grid"
 
 import PromoCard from "../../components/promo-card/promo-card.component.jsx"
 
-import { graphql, useStaticQuery } from "gatsby"
-import { Container } from "@mui/system"
+import {graphql, useStaticQuery} from "gatsby"
+import {Container} from "@mui/system"
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props

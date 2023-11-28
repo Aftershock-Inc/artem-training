@@ -2,7 +2,6 @@ import React from "react"
 import * as S from "./header.styles.jsx"
 import Container from "@mui/material/Container"
 import MainNav from "./main-nav/main-nav.component.jsx"
-import CustomLink from "../custom-link/custom-link.component.jsx"
 
 import InstagramIcon from "@mui/icons-material/Instagram"
 import FacebookIcon from "@mui/icons-material/Facebook"

@@ -3,7 +3,7 @@ import * as S from "./map.styles.jsx"
 import Container from "@mui/material/Container"
 import Grid from "@mui/material/Grid"
 
-import { graphql, useStaticQuery } from "gatsby"
+import {graphql, useStaticQuery} from "gatsby"
 
 const Map = () => {
   const staticQuery = useStaticQuery(graphql`

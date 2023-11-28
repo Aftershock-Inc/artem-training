@@ -1,9 +1,8 @@
 import styled from "@emotion/styled"
-import CustomBgImage from "../../components/custom-bg-image/custom-bg-image.component.jsx"
 import CustomImage from "../../components/custom-image/custom-image.component.jsx"
 import CustomTypography from "../../components/custom-typography/custom-typography.component.jsx"
 import CustomButton from "../../components/custom-button/custom-button.component.jsx"
-import { GatsbyImage } from "gatsby-plugin-image"
+
 export const BgImage = styled(CustomImage)`
   width: 100%;
   height: 100%;

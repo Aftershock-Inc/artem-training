@@ -1,15 +1,8 @@
-import React, { useState } from "react"
-import {
-  Button,
-  Card,
-  CardContent,
-  CardMedia,
-  Grid,
-  Typography,
-} from "@mui/material"
+import React, {useState} from "react"
+import {Button, Grid,} from "@mui/material"
 //import './card-carousel.styles.jsx'; // Import your CSS file
 import * as S from "./card-carousel.styles.jsx"
-import { graphql, useStaticQuery } from "gatsby"
+import {graphql, useStaticQuery} from "gatsby"
 
 const CardCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)

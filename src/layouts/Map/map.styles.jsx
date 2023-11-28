@@ -1,8 +1,7 @@
 import styled from "@emotion/styled"
-import CustomBgImage from "../../components/custom-bg-image/custom-bg-image.component"
 import CustomImage from "../../components/custom-image/custom-image.component"
 import CustomTypography from "../../components/custom-typography/custom-typography.component"
-import { CustomLink } from "../../components/custom-link/custom-link.styles"
+import {CustomLink} from "../../components/custom-link/custom-link.styles"
 
 export const Wrapper = styled.div`
   width: 100%;

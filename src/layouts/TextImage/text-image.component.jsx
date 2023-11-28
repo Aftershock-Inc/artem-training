@@ -1,11 +1,9 @@
 import React from "react"
 import * as S from "./text-image.styles.jsx"
 import PropTypes from "prop-types"
-import { StaticQuery } from "gatsby"
-import { Container } from "@mui/system"
+import {graphql, useStaticQuery} from "gatsby"
+import {Container} from "@mui/system"
 import Grid from "@mui/material/Grid"
-
-import { graphql, useStaticQuery } from "gatsby"
 
 const TextImage = () => {
   const staticQuery = useStaticQuery(graphql`

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import { getColor } from "../../utils/utils"
+import {getColor} from "../../utils/utils"
 import Typography from "@mui/material/Typography"
 
 export const Text = styled(Typography)`

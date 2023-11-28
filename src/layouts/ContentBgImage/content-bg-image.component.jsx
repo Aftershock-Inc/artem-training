@@ -4,8 +4,7 @@ import * as S from "./content-bg-image.styles.jsx"
 import Container from "@mui/material/Container"
 import Grid from "@mui/material/Grid"
 
-import { graphql, useStaticQuery } from "gatsby"
-import { Button } from "@mui/material"
+import {graphql, useStaticQuery} from "gatsby"
 
 const ContentBgImage = () => {
   const staticQuery = useStaticQuery(graphql`

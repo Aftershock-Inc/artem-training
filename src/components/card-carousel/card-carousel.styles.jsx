@@ -1,17 +1,7 @@
 import styled from "@emotion/styled"
-import CustomBgImage from "../custom-bg-image/custom-bg-image.component.jsx"
 import CustomImage from "../custom-image/custom-image.component.jsx"
-import CustomButton from "../custom-button/custom-button.component.jsx"
-import { GatsbyImage } from "gatsby-plugin-image"
 
-import {
-  Button,
-  Card,
-  CardContent,
-  CardMedia,
-  Grid,
-  Typography,
-} from "@mui/material"
+import {Card, CardMedia, Grid,} from "@mui/material"
 
 export const CardCarouselContainer = styled.div`
 overflow: hidden;

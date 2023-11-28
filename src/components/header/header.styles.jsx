@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import { CustomLink } from "../custom-link/custom-link.styles"
+import {CustomLink} from "../custom-link/custom-link.styles"
 
 export const TopWrapper = styled.div`
   background-color: #003400;

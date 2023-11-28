@@ -3,25 +3,24 @@
 import React from "react"
 import * as S from "./instagram-feed.styles.jsx"
 // Import Swiper React components
-import { Swiper, SwiperSlide, Breakpoints } from "swiper/react"
+import {Swiper, SwiperSlide} from "swiper/react"
 import Grid from "@mui/material/Grid"
 
 //imports for
 import Prev from "../../assets/arrow-left.svg"
 import Next from "../../assets/arrow-right.svg"
-import { IconButton } from "@mui/material"
+import {IconButton} from "@mui/material"
 
 // Import Swiper styles
 import "swiper/css"
 import "swiper/css/navigation"
 
-import { Container } from "@mui/system"
+import {Container} from "@mui/system"
 
 // import required modules
-import { Navigation } from "swiper/modules"
+import {Navigation} from "swiper/modules"
 
-import { graphql, useStaticQuery } from "gatsby"
-import CustomImage from "../../components/custom-image/custom-image.component.jsx"
+import {graphql, useStaticQuery} from "gatsby"
 
 export default function App() {
   const staticQuery = useStaticQuery(graphql`

@@ -2,16 +2,18 @@ import styled from "@emotion/styled"
 import { CustomLink } from "../custom-link/custom-link.styles"
 import CustomImage from "../custom-image/custom-image.component"
 import CustomButton from "../custom-button/custom-button.component"
-
+export const FooterAndTradeMarkWrapper = styled.div`
+  flex-direction: column;
+  background-color: ${({ theme }) => theme.palette.secondary.main};
+`
 export const Wrapper = styled.footer`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   color: white;
-  padding: 2rem;
+  padding-top: 2.5rem;
 
   color: white;
-  background-color: ${({ theme }) => theme.palette.secondary.main};
 
   ${({ theme }) => theme.breakpoints.down("sm")} {
     .MuiContainer-root {
@@ -23,9 +25,10 @@ export const Wrapper = styled.footer`
 
 export const LeftWrapper = styled(CustomLink)`
   display: flex;
+  flex-direction: row; /* Change to column direction */
   gap: 2rem;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding-left: 2.2rem;
 `
 
@@ -68,7 +71,6 @@ export const LogoText = styled.div`
 `
 export const LogoPalmImage = styled(CustomImage)`
   width: 140px;
-  height: 140px;
   position: relative;
   img {
     object-fit: contain !important;
@@ -76,10 +78,27 @@ export const LogoPalmImage = styled(CustomImage)`
 `
 
 export const LogoImage = styled(CustomImage)`
-  width: 50%;
-  height: 50%;
+  width: 78px;
+
   position: relative;
   img {
     object-fit: contain !important;
   }
+`
+
+export const TradeMark = styled.div`
+  display: flex;
+  color: #f9f9f9;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+
+  flex-direction: row; /* Change to column direction */
+  padding-left: 2.2rem;
+  padding-bottom: 2.5rem;
+`
+export const LogoWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
 `

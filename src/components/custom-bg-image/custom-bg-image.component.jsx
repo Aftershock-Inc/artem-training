@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import * as S from "./custom-bg-image.styles"
-import { GatsbyImage } from "gatsby-plugin-image"
+import {GatsbyImage} from "gatsby-plugin-image"
 
 const CustomBgImage = props => {
   const {
