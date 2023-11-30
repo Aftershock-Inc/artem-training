@@ -3,7 +3,7 @@ import * as S from "./map.styles.jsx"
 import Container from "@mui/material/Container"
 import Grid from "@mui/material/Grid"
 
-import {graphql, useStaticQuery} from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 const Map = () => {
   const staticQuery = useStaticQuery(graphql`
@@ -23,17 +23,20 @@ const Map = () => {
       <Container>
         <Grid container md={12} xl={12}>
           <Grid item md={4}>
+            <S.Circle />
             <S.WhiteBox>
-              <S.Title>Store Locator</S.Title>
-              <p>1024 Aventura Street, Boston, MA 02496</p>
+              <S.Title>CANNA RETREAT</S.Title>
+              <S.Description>
+                1024 Aventura Street, Boston, MA 02496
+              </S.Description>
               <S.LinksWrapper>
                 <S.Link href="tel:1-800-555-5555">CALL</S.Link>
                 <S.Link href="tel:1-800-555-5555">DIRECTIONS</S.Link>
               </S.LinksWrapper>
-                <S.Title>Hours</S.Title>
-              <p>
+              <S.Title>Hours</S.Title>
+              <S.Description>
                 Open 9 to 8 <br /> 7 Days a Week
-              </p>
+              </S.Description>
             </S.WhiteBox>
           </Grid>
         </Grid>
