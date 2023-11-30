@@ -34,8 +34,8 @@ export const GradientBox = styled.div`
 ///////////////////////////
 
 export const Wrapper = styled.div`
-  padding-top: 58px;
-  padding-left: 68px;
+  padding-top: ${({ theme }) => theme.typography.pxToRem(148)};
+
   width: 100%;
   color: yellow;
   position: relative;

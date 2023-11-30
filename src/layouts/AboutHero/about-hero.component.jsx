@@ -3,7 +3,8 @@ import * as S from "./about-hero.styles"
 
 import Grid from "@mui/material/Grid"
 
-import {graphql, useStaticQuery} from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
+import { Container } from "@mui/system"
 
 const AboutHero = () => {
   const staticQuery = useStaticQuery(graphql`
@@ -29,28 +30,30 @@ const AboutHero = () => {
   return (
     <S.BgImage img={staticQuery.background}>
       <S.Wrapper>
-        <Grid container>
-          <Grid item xs={4} md={4}>
-            <S.LeftWrapper>
-              <S.SoeHelveticaBigText>About Us</S.SoeHelveticaBigText>
-              <S.HeeboText>
-                Visit one of our two locations lorem ipsum sit velit official
-                consequat and vacation at home.
-              </S.HeeboText>
-              <S.Button>SHOP NOW</S.Button>
-            </S.LeftWrapper>
+        <Container maxWidth="xl">
+          <Grid container>
+            <Grid item xs={4} md={4}>
+              <S.LeftWrapper>
+                <S.SoeHelveticaBigText>About Us</S.SoeHelveticaBigText>
+                <S.HeeboText>
+                  Visit one of our two locations lorem ipsum sit velit official
+                  consequat and vacation at home.
+                </S.HeeboText>
+                <S.Button>SHOP NOW</S.Button>
+              </S.LeftWrapper>
+            </Grid>
+            <Grid item xs={4} md={4}>
+              <S.MidWrapper></S.MidWrapper>
+            </Grid>
+            <Grid item xs={4} md={4}>
+              <S.RightWrapper></S.RightWrapper>
+            </Grid>
           </Grid>
-          <Grid item xs={4} md={4}>
-            <S.MidWrapper></S.MidWrapper>
-          </Grid>
-          <Grid item xs={4} md={4}>
-            <S.RightWrapper></S.RightWrapper>
-          </Grid>
-        </Grid>
-        {/*       <S.LeftWrapper>asdf</S.LeftWrapper>
+          {/*       <S.LeftWrapper>asdf</S.LeftWrapper>
         <S.MidWrapper>asdf</S.MidWrapper>
         <S.RightWrapper>asdf</S.RightWrapper>*/}
-        <S.GradientBox />
+          <S.GradientBox />
+        </Container>
       </S.Wrapper>
     </S.BgImage>
   )

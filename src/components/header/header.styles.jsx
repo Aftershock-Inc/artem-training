@@ -55,6 +55,9 @@ export const Link = styled(CustomLink)`
   &:last-child {
     border-right: none;
   }
+  &:first-of-type {
+    padding-left: 0;
+  }
 `
 export const IconLink = styled(CustomLink)`
   align-items: center;

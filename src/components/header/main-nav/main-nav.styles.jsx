@@ -35,8 +35,8 @@ export const RightWrapper = styled.div`
   display: flex;
   gap: 2rem;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 2.2rem;
+  justify-content: flex-end;
+  width: 271px;
 `
 
 export const Link = styled(CustomLink)`

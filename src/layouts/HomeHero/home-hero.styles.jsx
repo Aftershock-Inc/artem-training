@@ -2,6 +2,7 @@ import styled from "@emotion/styled"
 import CustomBgImage from "../../components/custom-bg-image/custom-bg-image.component.jsx"
 import CustomImage from "../../components/custom-image/custom-image.component.jsx"
 import CustomButton from "../../components/custom-button/custom-button.component.jsx"
+import { Container } from "@mui/system"
 
 export const BgImage = styled(CustomBgImage)`
   width: 100%;
@@ -34,12 +35,11 @@ export const GradientBox = styled.div`
 `
 ///////////////////////////
 
-export const Wrapper = styled.div`
-  padding-top: 58px;
-  padding-left: 68px;
+export const Wrapper = styled(Container)`
   width: 100%;
   color: yellow;
   position: relative;
+  padding-top: ${({ theme }) => theme.typography.pxToRem(58)};
 `
 
 export const LeftWrapper = styled.div`
@@ -50,11 +50,11 @@ export const LeftWrapper = styled.div`
 `
 
 export const MidWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column-reverse;
-    padding-top: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+  padding-top: 20rem;
 `
 
 export const RightWrapper = styled.div`
@@ -74,7 +74,7 @@ export const Button = styled(CustomButton)`
   align-content: center;
   padding: 1rem 2rem !important;
   align-self: flex-start;
-  z-index:2;
+  z-index: 2;
 `
 
 export const SoeHelveticaBigText = styled.div`

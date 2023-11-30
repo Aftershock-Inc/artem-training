@@ -3,7 +3,7 @@ import * as S from "./home-hero.styles.jsx"
 
 import Grid from "@mui/material/Grid"
 
-import {graphql, useStaticQuery} from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 const HomeHero = () => {
   const staticQuery = useStaticQuery(graphql`
@@ -28,8 +28,8 @@ const HomeHero = () => {
 
   return (
     <S.BgImage img={staticQuery.background}>
-      <S.Wrapper>
-        <Grid container >
+      <S.Wrapper maxWidth="xl">
+        <Grid container>
           <Grid item xs={4} md={4}>
             <S.LeftWrapper>
               <S.SoeHelveticaBigText>Vacation at Home</S.SoeHelveticaBigText>
