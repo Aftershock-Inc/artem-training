@@ -4,7 +4,7 @@ import * as S from "./content-bg-image.styles.jsx"
 import Container from "@mui/material/Container"
 import Grid from "@mui/material/Grid"
 
-import {graphql, useStaticQuery} from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 const ContentBgImage = () => {
   const staticQuery = useStaticQuery(graphql`
@@ -20,8 +20,8 @@ const ContentBgImage = () => {
   return (
     <S.Wrapper>
       <S.BgImage img={staticQuery.background}></S.BgImage>
-      <Container>
-        <Grid container>
+      <S.CustomContainer>
+        <S.CustomGrid container>
           <Grid item xs={12} md={6}>
             <S.LeftWrapper>
               <S.Title>Shop online + Pick up In Store Today</S.Title>
@@ -29,8 +29,8 @@ const ContentBgImage = () => {
             </S.LeftWrapper>
           </Grid>
           <Grid item xs={12} md={6}></Grid>
-        </Grid>
-      </Container>
+        </S.CustomGrid>
+      </S.CustomContainer>
     </S.Wrapper>
   )
 }

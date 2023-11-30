@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import {CustomLink} from "../custom-link/custom-link.styles"
+import { CustomLink } from "../custom-link/custom-link.styles"
 
 export const TopWrapper = styled.div`
   background-color: #003400;
@@ -33,7 +33,8 @@ export const Wrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   color: white;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 `
 
 export const LeftWrapper = styled.div`
@@ -43,9 +44,9 @@ export const LeftWrapper = styled.div`
 `
 
 export const RightWrapper = styled.div`
-gap: 16px;
-display: flex;
-row-gap: 16px;
+  gap: 16px;
+  display: flex;
+  row-gap: 16px;
 `
 
 export const Link = styled(CustomLink)`
@@ -70,5 +71,4 @@ export const IconLink = styled(CustomLink)`
   padding: 3.95px;
   position: relative;
   width: 28px;
-
 `

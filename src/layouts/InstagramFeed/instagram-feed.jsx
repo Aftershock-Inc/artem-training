@@ -3,24 +3,24 @@
 import React from "react"
 import * as S from "./instagram-feed.styles.jsx"
 // Import Swiper React components
-import {Swiper, SwiperSlide} from "swiper/react"
+import { Swiper, SwiperSlide } from "swiper/react"
 import Grid from "@mui/material/Grid"
 
 //imports for
 import Prev from "../../assets/arrow-left.svg"
 import Next from "../../assets/arrow-right.svg"
-import {IconButton} from "@mui/material"
+import { IconButton } from "@mui/material"
 
 // Import Swiper styles
 import "swiper/css"
 import "swiper/css/navigation"
 
-import {Container} from "@mui/system"
+import { Container } from "@mui/system"
 
 // import required modules
-import {Navigation} from "swiper/modules"
+import { Navigation } from "swiper/modules"
 
-import {graphql, useStaticQuery} from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 export default function App() {
   const staticQuery = useStaticQuery(graphql`
@@ -55,14 +55,14 @@ export default function App() {
 
   return (
     <S.Wrapper>
-    <S.Background img={staticQuery.background} />
+      <S.Background img={staticQuery.background} />
       <Container maxWidth="lg">
         <S.GridContainer>
           <Grid container>
             <Grid item xs={6} md={7.5}>
               <S.Title>Stay Updated</S.Title>
               <p>Follow us for daily inspiration and exciting updates!</p>
-              <a>@cannaretreat</a>
+              <S.InstagramLink href={"#"}>@CANNARETREAT</S.InstagramLink>
             </Grid>
             <Grid item xs={6} md={4.5}>
               <S.RightWrapper>
@@ -115,7 +115,6 @@ export default function App() {
           <Next />
         </IconButton>
       </Container>
-      
     </S.Wrapper>
   )
 }

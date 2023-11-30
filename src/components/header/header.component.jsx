@@ -29,7 +29,6 @@ const Header = () => {
             </S.IconLink>
           </S.RightWrapper>
         </S.Wrapper>
-        
       </Container>
       <MainNav />
     </S.TopWrapper>

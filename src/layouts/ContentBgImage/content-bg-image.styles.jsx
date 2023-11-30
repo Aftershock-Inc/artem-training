@@ -2,6 +2,8 @@ import styled from "@emotion/styled"
 import CustomImage from "../../components/custom-image/custom-image.component.jsx"
 import CustomTypography from "../../components/custom-typography/custom-typography.component.jsx"
 import CustomButton from "../../components/custom-button/custom-button.component.jsx"
+import { Container } from "@mui/system"
+import Grid from "@mui/material/Grid"
 
 export const BgImage = styled(CustomImage)`
   width: 100%;
@@ -9,6 +11,14 @@ export const BgImage = styled(CustomImage)`
   position: absolute;
   top: 0;
   left: 0;
+`
+
+export const CustomContainer = styled(Container)`
+  height: 100%;
+`
+
+export const CustomGrid = styled(Grid)`
+  height: 100%;
 `
 export const Wrapper = styled.div`
   width: 100%;
@@ -19,7 +29,9 @@ export const Wrapper = styled.div`
 export const LeftWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 12rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 `
 
 export const RightWrapper = styled.div`

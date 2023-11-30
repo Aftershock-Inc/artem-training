@@ -1,8 +1,8 @@
 import React from "react"
 import * as S from "./text-image.styles.jsx"
 import PropTypes from "prop-types"
-import {graphql, useStaticQuery} from "gatsby"
-import {Container} from "@mui/system"
+import { graphql, useStaticQuery } from "gatsby"
+import { Container } from "@mui/system"
 import Grid from "@mui/material/Grid"
 
 const TextImage = () => {
@@ -19,11 +19,13 @@ const TextImage = () => {
   return (
     <S.Wrapper>
       <Container maxWidth="lg">
-        <Grid container spacing={8}>
+        <Grid container spacing={8} alignItems="center">
           <Grid xs={12} md={6} xl={6} item>
             <S.LeftWrapper>
               <S.Title>Opening Day</S.Title>
-              <S.Descritpion>Food Vendors, 1-2 brand cultivator popups</S.Descritpion>
+              <S.Descritpion>
+                Food Vendors, 1-2 brand cultivator popups
+              </S.Descritpion>
               <S.Link href="https://www.google.com/">Shop Now</S.Link>
             </S.LeftWrapper>
           </Grid>
