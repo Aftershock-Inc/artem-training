@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import * as S from "./custom-image.styles"
-import {GatsbyImage} from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const CustomImage = ({
   img,
@@ -33,7 +33,11 @@ const CustomImage = ({
 
   if (image) {
     return (
-      <S.Wrapper paddingpercentage={arPaddingPercentage} className={className}>
+      <S.Wrapper
+        fit={fit}
+        paddingpercentage={arPaddingPercentage}
+        className={className}
+      >
         <GatsbyImage image={image} loading={loading} alt={imgAlt} {...props} />
       </S.Wrapper>
     )
