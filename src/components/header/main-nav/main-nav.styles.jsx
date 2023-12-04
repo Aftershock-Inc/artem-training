@@ -1,7 +1,8 @@
 import styled from "@emotion/styled"
-import { CustomLink } from "../../custom-link/custom-link.styles"
+
 import CustomImage from "../../custom-image/custom-image.component"
 import CustomButton from "../../custom-button/custom-button.component"
+import CustomLink from "../../custom-link/custom-link.component"
 
 export const TopWrapper = styled.div`
   background-color: white;
@@ -25,10 +26,10 @@ export const LeftWrapper = styled(CustomLink)`
 
 export const MidWrapper = styled(CustomImage)`
   display: flex;
-  width: 100%;
-  height: 100%;
-  max-height: 104px;
-  max-width: 205px;
+  //width: 100%;
+  //height: 100%;
+  height: 104px;
+  width: 205px;
 `
 
 export const RightWrapper = styled.div`
@@ -56,3 +57,4 @@ export const Button = styled(CustomButton)`
   align-content: center;
   padding: 1rem 2rem !important;
 `
+export const HomeLink = styled(CustomLink)``

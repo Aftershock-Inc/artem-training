@@ -4,6 +4,7 @@ import * as S from "./main-nav.styles.jsx"
 import Container from "@mui/material/Container"
 
 import { graphql, useStaticQuery } from "gatsby"
+import CustomLink from "../../custom-link/custom-link.component"
 
 const MainNav = () => {
   const staticQuery = useStaticQuery(graphql`
@@ -22,10 +23,13 @@ const MainNav = () => {
         <S.Wrapper>
           <S.LeftWrapper>
             {" "}
-            <S.Link href="/about">ABOUT</S.Link> <S.Link>EVENTS</S.Link>{" "}
-            <S.Link>CONTACT</S.Link>
+            <S.Link url="/about">ABOUT</S.Link>{" "}
+            <S.Link url="/events">EVENTS</S.Link>{" "}
+            <S.Link url="/contact">CONTACT</S.Link>
           </S.LeftWrapper>
-          <S.MidWrapper img={staticQuery.logo} />
+          <CustomLink url="/">
+            <S.MidWrapper img={staticQuery.logo} />
+          </CustomLink>
           <S.RightWrapper>
             <S.Button>SHOP NOW</S.Button>
           </S.RightWrapper>
