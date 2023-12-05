@@ -2,13 +2,22 @@ import React from "react"
 import * as S from "./promo-card.styles.jsx"
 import PropTypes from "prop-types"
 
-const PromoCard = ({ title, description, image, shopLinkText,shopLinkUrl }) => {
+const PromoCard = ({
+  title,
+  description,
+  image,
+  shopLinkText,
+  shopLinkUrl,
+  ...others
+}) => {
   return (
-    <S.Wrapper>
+    <S.Wrapper {...others}>
       <S.Image img={image}></S.Image>
-      <S.Title>{title}</S.Title>
-      <S.Description>{description}</S.Description>
-      <S.Link href={shopLinkUrl}>{shopLinkText}</S.Link>
+      <S.Title className="title">{title}</S.Title>
+      <S.Description className="description">{description}</S.Description>
+      <S.Link className="link" href={shopLinkUrl}>
+        {shopLinkText}
+      </S.Link>
     </S.Wrapper>
   )
 }

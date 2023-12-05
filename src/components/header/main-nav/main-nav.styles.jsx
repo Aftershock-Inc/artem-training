@@ -21,7 +21,6 @@ export const LeftWrapper = styled(CustomLink)`
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
-  padding-left: 2.2rem;
 `
 
 export const MidWrapper = styled(CustomImage)`

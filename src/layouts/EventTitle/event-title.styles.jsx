@@ -1,10 +1,12 @@
 import styled from "@emotion/styled"
 import CustomImage from "../../components/custom-image/custom-image.component.jsx"
 import PalmSVG from "../../assets/palm-tree.svg"
-export const Wrapper = styled.div`
+import SectionWrapper from "../../components/section-wrapper/section-wrapper.component"
+export const Wrapper = styled(SectionWrapper)`
   background-color: #f8fdf7;
   position: relative;
-  margin-top: ${({ theme }) => theme.typography.pxToRem(0)};
+  padding-top: 0px;
+  padding-bottom: 0px;
 `
 
 export const LeftWrapper = styled.div`
@@ -19,6 +21,7 @@ export const LeftWrapper = styled.div`
   //padding-left: 4rem;
   //background-color: red;
   position: relative;
+  max-width: 20.5rem;
   z-index: 3;
 `
 export const ContentWrapper = styled.div``

@@ -10,8 +10,6 @@ import React from "react"
 const Contact = () => {
   return (
     <Layout>
-      <HomeHero />
-      <PromoTabs />
       <TextImage />
       <InstagramFeed />
       <ContentBgImage />

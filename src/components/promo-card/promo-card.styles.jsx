@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   border: 10px;
-  margin-top: 100px;
+  margin-top: 1rem;
 `
 export const Image = styled(CustomImage)`
   width: 100%;

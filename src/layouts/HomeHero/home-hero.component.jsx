@@ -56,8 +56,8 @@ const HomeHero = () => {
         {/*       <S.LeftWrapper>asdf</S.LeftWrapper>
         <S.MidWrapper>asdf</S.MidWrapper>
         <S.RightWrapper>asdf</S.RightWrapper>*/}
-        <S.GradientBox />
       </S.Wrapper>
+      <S.GradientBox />
     </S.BgImage>
   )
 }

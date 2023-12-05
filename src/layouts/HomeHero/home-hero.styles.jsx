@@ -12,6 +12,7 @@ export const BgImage = styled(CustomBgImage)`
   justify-content: center;
   position: relative;
   z-index: 1;
+  padding-bottom: 2rem;
 `
 
 export const BgImgWrapper = styled.div`

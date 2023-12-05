@@ -24,7 +24,7 @@ const EventTitle = () => {
   return (
     <S.Wrapper>
       <S.VectorPalm />
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Grid container spacing={8} alignItems="center">
           <Grid xs={12} md={6} xl={6} item>
             <S.LeftWrapper>
