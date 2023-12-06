@@ -19,7 +19,7 @@ const ImageText = () => {
   return (
     <S.Wrapper>
       <Container maxWidth="lg">
-        <Grid container alignItems="center">
+        <Grid alignItems="center" container>
           <Grid xs={12} md={6} xl={6} item>
             <S.LeftWrapper>
               <S.Image

@@ -3,7 +3,12 @@ import CustomImage from "../../components/custom-image/custom-image.component.js
 
 export const Wrapper = styled.div`
   background-color: #f8fdf7;
-  margin-top: ${({ theme }) => theme.typography.pxToRem(148)};
+  padding-top: 2.5rem;
+  padding-bottom: 3.69rem;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    padding-top: 5.5rem;
+    padding-bottom: 6.69rem;
+  }
 `
 
 export const LeftWrapper = styled.div`
@@ -25,7 +30,11 @@ export const RightWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: ${({ theme }) => theme.typography.pxToRem(157)};
+  padding-top: 5rem;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    padding-top: 0;
+    padding-left: ${({ theme }) => theme.typography.pxToRem(157)};
+  }
 `
 
 export const Title = styled.h2`

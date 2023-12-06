@@ -23,6 +23,7 @@ const ContactFormComponent = () => {
       <S.Section>
         <S.Wrapper>
           <div style={{ maxWidth: "39rem" }}>
+            <S.Title>Get in Touch</S.Title>
             <form onSubmit={handleSubmit(onSubmit)}>
               <Grid container spacing={3}>
                 <Grid item xs={12} sm={6}>

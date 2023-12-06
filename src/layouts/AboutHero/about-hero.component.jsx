@@ -31,24 +31,19 @@ const AboutHero = () => {
     <S.BgImage img={staticQuery.background}>
       <S.Wrapper>
         <Container maxWidth="xl">
-          <Grid container>
-            <Grid item xs={4} md={4}>
-              <S.LeftWrapper>
-                <S.SoeHelveticaBigText>About Us</S.SoeHelveticaBigText>
-                <S.HeeboText>
-                  Visit one of our two locations lorem ipsum sit velit official
-                  consequat and vacation at home.
-                </S.HeeboText>
-                <S.Button>SHOP NOW</S.Button>
-              </S.LeftWrapper>
-            </Grid>
-            <Grid item xs={4} md={4}>
-              <S.MidWrapper></S.MidWrapper>
-            </Grid>
-            <Grid item xs={4} md={4}>
-              <S.RightWrapper></S.RightWrapper>
-            </Grid>
-          </Grid>
+          <S.LeftWrapper>
+            <S.SoeHelveticaBigText>About Us</S.SoeHelveticaBigText>
+            <S.HeeboText>
+              Visit one of our two locations lorem ipsum sit velit official
+              consequat and vacation at home.
+            </S.HeeboText>
+            <S.Button>SHOP NOW</S.Button>
+          </S.LeftWrapper>
+
+          <S.MidWrapper></S.MidWrapper>
+
+          <S.RightWrapper></S.RightWrapper>
+
           {/*       <S.LeftWrapper>asdf</S.LeftWrapper>
         <S.MidWrapper>asdf</S.MidWrapper>
         <S.RightWrapper>asdf</S.RightWrapper>*/}

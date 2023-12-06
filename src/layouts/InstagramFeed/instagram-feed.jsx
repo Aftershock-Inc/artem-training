@@ -108,6 +108,7 @@ export default function App() {
             <S.Image img={staticQuery.cookie1} />
           </SwiperSlide>
         </Swiper>
+        <div style={{ paddingTop: "2.63rem" }}></div>
         <IconButton className="slider-left">
           <Prev />
         </IconButton>
