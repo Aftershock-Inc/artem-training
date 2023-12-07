@@ -3,3 +3,37 @@ image text agregar spacing
 about us hero  quitar grid
 
 instagram feed arreglar botones
+
+-------------
+
+palma tiene que cubrir todo el height tiene que topar el suelo
+
+instagram feed arreglar todo en rem,
+shop now tiene que ser mas alejado del texto esta muy pegado usar pseudoclases
+usar customlink para navegacion dentro de
+&:after tambien hay hower y active after y before
+text decoration none
+&:after{
+content:"";
+height:4px,
+width:100%;
+left 0;
+bottom; 10px;
+positioin absolute;
+}
+en wrapper quitar flex
+
+padding entre secciones ubicarlo en padre no entre hijos
+
+promo tabs agregar padding en  wrapper
+padding  2.5rem 0;
+$(
+
+text image falta espacio vertical
+quitar de imagen min-heightde 722px
+usar CustomBgImage en right wrapper
+quitar container el container solamenta se usa en el left wrapper
+crear un customGridItem de styled(Grid)
+a imagen aplicar object-fit: cover
+image width:50 vw;
+height: 100%;

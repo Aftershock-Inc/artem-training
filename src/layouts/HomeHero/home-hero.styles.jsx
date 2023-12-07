@@ -12,7 +12,8 @@ export const BgImage = styled(CustomBgImage)`
   justify-content: center;
   position: relative;
   z-index: 1;
-  padding-bottom: 2rem;
+  padding-bottom: ${({ theme }) => theme.typography.pxToRem(58)};
+  padding-top: ${({ theme }) => theme.typography.pxToRem(58)};
 `
 
 export const BgImgWrapper = styled.div`
@@ -34,20 +35,21 @@ export const GradientBox = styled.div`
   );
   z-index: 1;
 `
-///////////////////////////
 
 export const Wrapper = styled(Container)`
   width: 100%;
   color: yellow;
   position: relative;
-  padding-top: ${({ theme }) => theme.typography.pxToRem(58)};
+  //;
 `
 
 export const LeftWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding-bottom: 2rem;
+  //display: flex;
+  //flex-direction: column;
+  //gap: 2rem;
+  //padding-bottom: 2rem;
+
+  max-width: 450px;
 `
 
 export const MidWrapper = styled.div`
@@ -66,6 +68,9 @@ export const RightWrapper = styled.div`
   justify-content: space-between;
   padding-left: 2.2rem;
   top: 0;
+
+  padding-bottom: 113px; // same as the height of GradientBox
+  box-sizing: border-box; // to include padding in height calculation
 `
 export const Button = styled(CustomButton)`
   background-color: Green;
@@ -91,7 +96,7 @@ export const SoeHelveticaBigText = styled.div`
 `
 
 export const HeeboText = styled.div`
-  color: var(--neutralwhite);
+  color: white;
   font-family: "Heebo-Medium", Helvetica;
   font-size: 24px;
   font-weight: 500;
@@ -103,19 +108,27 @@ export const HeeboText = styled.div`
   color: white;
   position: relative;
   align-self: flex-start;
+  margin-top: ${({ theme }) => theme.typography.pxToRem(12)};
+  margin-bottom: ${({ theme }) => theme.typography.pxToRem(26)};
 `
 
 export const VeteranOwnedImg = styled(CustomImage)`
   width: 100%;
   height: 100%;
+  max-height: 87px;
   max-width: 87px;
   img {
     object-fit: contain !important;
   }
   z-index: 2;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 `
 
-export const VectorPalm = styled(CustomImage)`
+/*export const VectorPalm = styled(CustomImage)`
   width: 100%;
   height: 100%;
   max-width: 587px;
@@ -124,4 +137,31 @@ export const VectorPalm = styled(CustomImage)`
   img {
     object-fit: contain !important;
   }
+`*/
+
+export const VectorPalm = styled(CustomImage)`
+  //width: 100%;
+  ////height: 100%;
+  //max-width: 587px;
+  //top: -20px;
+  ////position: absolute;
+  //bottom: 0;
+  //img {
+  //  object-fit: contain !important;
+  //}
+  //height: calc(100% + 113px); // extend height to cover GradientBox
+  //position: absolute;
+  //bottom: -113px; // shift it down to align with GradientBox
+  width: 100%;
+  height: 100%;
+  max-width: 587px;
+  img {
+    object-fit: contain !important;
+  }
+  //z-index: 2;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  //transform: translateX(-50%);
 `
