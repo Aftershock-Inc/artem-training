@@ -1,12 +1,8 @@
 import React from "react"
 import * as S from "./contact-form.styles"
 import { Grid } from "@mui/material"
-import { FormProvider, useForm } from "react-hook-form"
+import { useForm } from "react-hook-form"
 //import CustomButton from "../../components/custom-button/custom-button.component"
-import { TextFields } from "@mui/icons-material"
-
-import Box from "@mui/material/Box"
-import TextField from "@mui/material/TextField"
 import { Container } from "@mui/system"
 
 const ContactFormComponent = () => {

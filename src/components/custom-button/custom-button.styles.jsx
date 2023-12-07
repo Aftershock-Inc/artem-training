@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Button from "@mui/material/Button"
-import {darken} from "@mui/system"
+import { darken } from "@mui/system"
 
 export const CustomButton = styled(Button)`
   color: white;
@@ -46,7 +46,7 @@ export const CustomButton = styled(Button)`
         theme.palette[color]
           ? theme.palette[color].main
           : theme.palette.primary.main,
-        0.1
+        0.1,
       )};
     //border: 1px solid ${({ theme }) =>
       darken(theme.palette.primary.main, 0.1)};

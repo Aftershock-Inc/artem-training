@@ -1,7 +1,8 @@
 import styled from "@emotion/styled"
-import { Container, Typography, TextField } from "@mui/material"
+import { Container, TextField } from "@mui/material"
 import CustomButton from "../custom-button/custom-button.component"
 import CustomTypography from "../custom-typography/custom-typography.component"
+
 export const Section = styled.section`
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -19,7 +20,6 @@ export const CustomInput = styled(TextField)`
 
     &[data-shrink="true"] {
       color: green;
-      position
     }
   }
 `

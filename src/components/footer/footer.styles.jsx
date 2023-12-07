@@ -2,6 +2,7 @@ import styled from "@emotion/styled"
 import { CustomLink } from "../custom-link/custom-link.styles"
 import CustomImage from "../custom-image/custom-image.component"
 import CustomButton from "../custom-button/custom-button.component"
+
 export const FooterAndTradeMarkWrapper = styled.div`
   flex-direction: column;
   background-color: ${({ theme }) => theme.palette.secondary.main};

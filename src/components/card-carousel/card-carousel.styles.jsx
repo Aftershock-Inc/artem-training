@@ -1,10 +1,10 @@
 import styled from "@emotion/styled"
 import CustomImage from "../custom-image/custom-image.component.jsx"
 
-import {Card, CardMedia, Grid,} from "@mui/material"
+import { Card, CardMedia, Grid } from "@mui/material"
 
 export const CardCarouselContainer = styled.div`
-overflow: hidden;
+  overflow: hidden;
 `
 
 export const CardCarouselGrid = styled(Grid)`

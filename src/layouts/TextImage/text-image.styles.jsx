@@ -6,18 +6,7 @@ export const Wrapper = styled.div`
   margin-top: ${({ theme }) => theme.typography.pxToRem(148)};
 `
 
-export const LeftWrapper = styled.div`
-  //display: flex;
-  //flex-direction: column;
-  //align-items: center;
-  //justify-content: flex-start;
-  //align-items: center;
-  //position: absolute;
-  //gap: 2rem;
-  //padding-top: 10rem;
-  //padding-left: 4rem;
-  //background-color: red;
-`
+export const LeftWrapper = styled.div``
 export const ContentWrapper = styled.div``
 
 export const RightWrapper = styled.div`
