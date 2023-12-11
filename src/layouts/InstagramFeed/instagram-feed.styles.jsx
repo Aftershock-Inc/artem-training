@@ -15,8 +15,8 @@ export const Image = styled(CustomImage)`
 
 export const Wrapper = styled.div`
   position: relative;
-  padding-top: 104px;
-  padding-bottom: 104px;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 `
 
 export const Background = styled(CustomImage)`
@@ -28,15 +28,15 @@ export const Background = styled(CustomImage)`
   opacity: 0.1;
 `
 export const Title = styled(CustomTypography)`
-  -webkit-text-stroke: 2px #00ae00;
-  color: #ffffff;
-  font-family: "Soe-Regular", Helvetica;
-  font-size: 84.5px;
-  font-weight: 400;
-  left: 0;
-  letter-spacing: 1.69px;
-  line-height: 79.5px;
   position: relative;
+
+  color: #00ae00;
+  font-family: Soe;
+  font-size: 2.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.875rem; /* 104.545% */
+  letter-spacing: 0.055rem;
 `
 export const InstagramLink = styled.a`
   color: #00ae00;
@@ -54,9 +54,7 @@ export const LeftWrapper = styled.div`
 
 export const RightWrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: space-around;
+  flex-direction: row-reverse;
 `
 
 export const Button = styled(CustomButton)`

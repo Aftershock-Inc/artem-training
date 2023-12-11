@@ -4,6 +4,7 @@ import CustomImage from "../../custom-image/custom-image.component"
 import CustomButton from "../../custom-button/custom-button.component"
 import CustomLink from "../../custom-link/custom-link.component"
 
+import MenuIcon from "@mui/icons-material/Menu"
 export const TopWrapper = styled.div`
   background-color: white;
   padding-top: 20px;
@@ -17,26 +18,40 @@ export const Wrapper = styled.div`
 `
 
 export const LeftWrapper = styled(CustomLink)`
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  justify-content: space-between;
+  display: none;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+`
+export const CustomMenuIcon = styled(MenuIcon)`
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    display: none;
+  }
 `
 
 export const MidWrapper = styled(CustomImage)`
-  display: flex;
-  //width: 100%;
-  //height: 100%;
-  height: 104px;
-  width: 205px;
+  display: none;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    display: flex;
+    //width: 100%;
+    //height: 100%;
+    height: 104px;
+    width: 205px;
+  }
 `
 
 export const RightWrapper = styled.div`
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  justify-content: flex-end;
-  width: 271px;
+  display: none;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-end;
+    width: 271px;
+  }
 `
 
 export const Link = styled(CustomLink)`

@@ -16,7 +16,7 @@ const PromoCard = ({
       <S.Title className="title">{title}</S.Title>
       <S.Description className="description">{description}</S.Description>
       <S.Link className="link" href={shopLinkUrl}>
-        {shopLinkText}
+        <span>{shopLinkText}</span>
       </S.Link>
     </S.Wrapper>
   )

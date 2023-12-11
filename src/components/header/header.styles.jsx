@@ -30,23 +30,38 @@ export const TopNavLogos = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   color: white;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `
 
 export const LeftWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `
 
 export const RightWrapper = styled.div`
   gap: 16px;
   display: flex;
   row-gap: 16px;
+
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `
 
 export const Link = styled(CustomLink)`

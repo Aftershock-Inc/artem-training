@@ -8,8 +8,8 @@ import Grid from "@mui/material/Grid"
 
 import PromoCard from "../../components/promo-card/promo-card.component.jsx"
 
-import {graphql, useStaticQuery} from "gatsby"
-import {Container} from "@mui/system"
+import { graphql, useStaticQuery } from "gatsby"
+import { Container } from "@mui/system"
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props
@@ -59,7 +59,8 @@ const PromoTabs = () => {
   `)
 
   return (
-    <S.Wrapper sx={{ width: "100%" }}>
+    //<S.Wrapper sx={{ width: "100%" }}>
+    <S.Wrapper>
       <Container maxWidth="lg">
         <S.Title>This Week’s Specials</S.Title>
         <Box sx={{ borderBottom: 0, borderColor: "divider" }}>

@@ -1,10 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
 import * as S from "./main-nav.styles.jsx"
 
 import Container from "@mui/material/Container"
 
 import { graphql, useStaticQuery } from "gatsby"
 import CustomLink from "../../custom-link/custom-link.component"
+
+import MenuIcon from "@mui/icons-material/Menu"
 
 const MainNav = () => {
   const staticQuery = useStaticQuery(graphql`
@@ -17,10 +19,17 @@ const MainNav = () => {
     }
   `)
 
+  const [isActiveMenu, setIsActiveMenu] = useState(false)
+
+  const handleToggleMenu = () => {
+    setIsActiveMenu(!isActiveMenu)
+  }
+
   return (
     <S.TopWrapper>
       <Container maxWidth="xl">
         <S.Wrapper>
+          <S.CustomMenuIcon onClick={handleToggleMenu} />
           <S.LeftWrapper>
             {" "}
             <S.Link url="/about">ABOUT</S.Link>{" "}

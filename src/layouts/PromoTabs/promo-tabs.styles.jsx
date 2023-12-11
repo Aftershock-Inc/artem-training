@@ -12,7 +12,7 @@ export const CustomTab = styled(Tab)`
 export const CustomTabs = styled(Tabs)`
   .MuiTabs-indicator {
     color: #00ae00;
-    background-color: #00ae00
+    background-color: #00ae00;
   }
 `
 
@@ -23,7 +23,7 @@ export const Title = styled.h2`
   font-weight: 700;
   line-height: 46px;
   text-align: center;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 `
 //el elemento que tiene la clase  id o sedoclase o estado.

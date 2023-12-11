@@ -113,19 +113,23 @@ export const HeeboText = styled.div`
 `
 
 export const VeteranOwnedImg = styled(CustomImage)`
-  width: 100%;
-  height: 100%;
-  max-height: 87px;
-  max-width: 87px;
-  img {
-    object-fit: contain !important;
-  }
-  z-index: 2;
+  display: none;
 
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    width: 100%;
+    height: 100%;
+    max-height: 87px;
+    max-width: 87px;
+    img {
+      object-fit: contain !important;
+    }
+    z-index: 2;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 `
 
 /*export const VectorPalm = styled(CustomImage)`
@@ -140,28 +144,18 @@ export const VeteranOwnedImg = styled(CustomImage)`
 `*/
 
 export const VectorPalm = styled(CustomImage)`
-  //width: 100%;
-  ////height: 100%;
-  //max-width: 587px;
-  //top: -20px;
-  ////position: absolute;
-  //bottom: 0;
-  //img {
-  //  object-fit: contain !important;
-  //}
-  //height: calc(100% + 113px); // extend height to cover GradientBox
-  //position: absolute;
-  //bottom: -113px; // shift it down to align with GradientBox
   width: 100%;
   height: 100%;
-  max-width: 587px;
+  max-width: 660px;
+
   img {
     object-fit: contain !important;
   }
-  //z-index: 2;
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
-  position: absolute;
-  top: 0;
-  right: 0;
   //transform: translateX(-50%);
 `

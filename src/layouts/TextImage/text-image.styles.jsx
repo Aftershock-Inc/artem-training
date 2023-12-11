@@ -20,7 +20,7 @@ export const Title = styled.h2`
   font-weight: 700;
   line-height: 26px;
   align-self: flex-start;
-  padding-bottom: 1rem;
+  padding-bottom: 1.25rem;
 `
 
 export const Descritpion = styled.p`
@@ -30,15 +30,44 @@ export const Descritpion = styled.p`
   font-weight: 400;
   line-height: 26px;
   align-self: flex-start;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
 `
 
 export const Link = styled.a`
   color: #00ae00;
-  font-size: 14px;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-family: Heebo;
+  font-size: 0.875rem;
+  font-style: normal;
   font-weight: 500;
-  line-height: 12px;
+  line-height: 0.75rem; /* 85.714% */
+  letter-spacing: 0.04375rem;
+  text-transform: uppercase;
+
   align-self: flex-start;
+
+  text-decoration: none;
+
+  display: inline-block;
+  position: relative;
+
+  span {
+    position: relative;
+    display: inline;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1.5px;
+      background: #00ae00;
+      position: absolute;
+      left: 0;
+      bottom: -0.2rem;
+    }
+  }
 `
 
 export const Image = styled(CustomImage)`

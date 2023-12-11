@@ -34,7 +34,8 @@ export const WhiteBox = styled.div`
   position: relative;
   background-color: #ffffff;
   z-index: 2;
-  padding: 1rem;
+  padding: 2rem;
+  max-width: 20rem;
 `
 
 export const LinksWrapper = styled.div`
@@ -43,7 +44,7 @@ export const LinksWrapper = styled.div`
   gap: 2rem;
 `
 
-export const Title = styled(CustomTypography)`
+export const Title = styled.h2`
   color: #00ae00;
   font-family: "Heebo", Helvetica;
   font-size: 1.25rem;
@@ -51,9 +52,9 @@ export const Title = styled(CustomTypography)`
   font-weight: 700;
   line-height: 1.75rem;
   letter-spacing: -0.025rem;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
 `
-export const Description = styled(CustomTypography)`
+export const Description = styled.p`
   font-feature-settings:
     "clig" off,
     "liga" off;
@@ -62,10 +63,11 @@ export const Description = styled(CustomTypography)`
   font-style: normal;
   font-weight: 400;
   line-height: 1.625rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.1rem;
 `
 export const Link = styled(CustomLink)`
   color: #00ae00;
-  text-decoration: underline;
   font-feature-settings:
     "clig" off,
     "liga" off;
@@ -76,6 +78,8 @@ export const Link = styled(CustomLink)`
   line-height: 0.75rem; /* 85.714% */
   letter-spacing: -0.0175rem;
   text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 1rem;
 `
 export const Circle = styled.div`
   left: 50%;

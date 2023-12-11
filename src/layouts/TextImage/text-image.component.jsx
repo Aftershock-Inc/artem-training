@@ -26,7 +26,9 @@ const TextImage = () => {
               <S.Descritpion>
                 Food Vendors, 1-2 brand cultivator popups
               </S.Descritpion>
-              <S.Link href="https://www.google.com/">Shop Now</S.Link>
+              <S.Link href="https://www.google.com/">
+                <span>Shop Now</span>
+              </S.Link>
             </S.LeftWrapper>
           </Grid>
           <Grid xs={12} md={6} item>
