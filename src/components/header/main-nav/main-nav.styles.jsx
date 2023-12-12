@@ -15,6 +15,11 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   color: black;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+  }
 `
 
 export const LeftWrapper = styled(CustomLink)`
@@ -27,19 +32,20 @@ export const LeftWrapper = styled(CustomLink)`
   }
 `
 export const CustomMenuIcon = styled(MenuIcon)`
+  order: 2;
   ${({ theme }) => theme.breakpoints.up("md")} {
     display: none;
   }
 `
 
 export const MidWrapper = styled(CustomImage)`
-  display: none;
+  display: flex;
+  justify-content: center;
+  //width: 100%;
+  //height: 100%;
+  height: 104px;
+  width: 205px;
   ${({ theme }) => theme.breakpoints.up("md")} {
-    display: flex;
-    //width: 100%;
-    //height: 100%;
-    height: 104px;
-    width: 205px;
   }
 `
 

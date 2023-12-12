@@ -87,11 +87,11 @@ export const SoeHelveticaBigText = styled.div`
   -webkit-text-stroke: 2px #00ae00;
   color: #ffffff;
   font-family: "Soe-Regular", Helvetica;
-  font-size: 84.5px;
+  font-size: 84px;
   font-weight: 400;
   left: 0;
   letter-spacing: 1.69px;
-  line-height: 79.5px;
+  line-height: 84px;
   position: relative;
 `
 
@@ -113,9 +113,10 @@ export const HeeboText = styled.div`
 `
 
 export const VeteranOwnedImg = styled(CustomImage)`
-  display: none;
+  display: none; // This will hide the image by default
 
-  ${({ theme }) => theme.breakpoints.up("md")} {
+  @media (min-width: ${({ theme }) => theme.breakpoints.values.md}px) {
+    display: block; // This will display the image on screens larger than the 'md' breakpoint
     width: 100%;
     height: 100%;
     max-height: 87px;
@@ -123,12 +124,11 @@ export const VeteranOwnedImg = styled(CustomImage)`
     img {
       object-fit: contain !important;
     }
-    z-index: 2;
-
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
   }
 `
 

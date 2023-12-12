@@ -35,37 +35,30 @@ export const Descritpion = styled.p`
 
 export const Link = styled.a`
   color: #00ae00;
-  font-feature-settings:
-    "clig" off,
-    "liga" off;
-  font-family: Heebo;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 500;
-  line-height: 0.75rem; /* 85.714% */
-  letter-spacing: 0.04375rem;
+  line-height: 12px;
   text-transform: uppercase;
 
-  align-self: flex-start;
+  text-decoration: none; // Remove the default underline
 
-  text-decoration: none;
-
-  display: inline-block;
-  position: relative;
+  display: inline-block; // Ensures the container fits the content
+  position: relative; // Establishes a positioning context for pseudo-elements
 
   span {
     position: relative;
     display: inline;
 
+    // Adding custom underline using ::after pseudo-element
     &::after {
       content: "";
       display: block;
-      width: 100%;
-      height: 1.5px;
-      background: #00ae00;
+      width: 100%; // Underline will match the text width
+      height: 1.5px; // Adjust the thickness of the underline
+      background: #00ae00; // Color of the underline
       position: absolute;
       left: 0;
-      bottom: -0.2rem;
+      bottom: -0.2rem; // Adjust vertical position of the underline
     }
   }
 `
