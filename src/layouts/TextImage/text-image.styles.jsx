@@ -4,9 +4,12 @@ import CustomImage from "../../components/custom-image/custom-image.component.js
 export const Wrapper = styled.div`
   background-color: #f8fdf7;
   margin-top: ${({ theme }) => theme.typography.pxToRem(148)};
+  overflow: hidden;
 `
 
-export const LeftWrapper = styled.div``
+export const LeftWrapper = styled.div`
+  heigth: 37rem;
+`
 export const ContentWrapper = styled.div``
 
 export const RightWrapper = styled.div`
@@ -18,7 +21,7 @@ export const Title = styled.h2`
   font-size: 64px;
   font-family: "Heebo";
   font-weight: 700;
-  line-height: 26px;
+  line-height: 64px;
   align-self: flex-start;
   padding-bottom: 1.25rem;
 `
@@ -30,7 +33,7 @@ export const Descritpion = styled.p`
   font-weight: 400;
   line-height: 26px;
   align-self: flex-start;
-  padding-bottom: 2.5rem;
+  padding-bottom: 0.5rem;
 `
 
 export const Link = styled.a`
@@ -67,6 +70,7 @@ export const Image = styled(CustomImage)`
   width: 100%;
   height: 100%;
   min-width: 722px;
+
   img {
     object-fit: contain !important;
   }

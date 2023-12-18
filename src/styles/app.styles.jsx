@@ -163,6 +163,9 @@ const wordpress = css`
 `
 
 export const GlobalStyles = theme => css`
+  .tl-edges {
+    overflow: unset !important;
+  }
   img,
   svg {
     max-width: 100%;
@@ -212,6 +215,6 @@ export const AppContainer = styled.main`
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding-top: ${({ theme }) => theme.navHeight}px;
+  padding-top: 0;
   background-color: #f8fdff;
 `

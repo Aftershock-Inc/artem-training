@@ -4,8 +4,12 @@ import CustomImage from "../../custom-image/custom-image.component"
 import CustomButton from "../../custom-button/custom-button.component"
 import CustomLink from "../../custom-link/custom-link.component"
 
+import { AppBar, Drawer, List, ListItem, ListItemText } from "@mui/material"
+
 import MenuIcon from "@mui/icons-material/Menu"
-export const TopWrapper = styled.div`
+
+export const TopWrapper = styled(AppBar)`
+  //position: fixed;
   background-color: white;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -15,6 +19,12 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   color: black;
+
+  .MuiSvgIcon-root {
+    align-self: center;
+    color: green;
+  }
+
   ${({ theme }) => theme.breakpoints.up("md")} {
     display: flex;
     justify-content: space-between;
@@ -33,8 +43,30 @@ export const LeftWrapper = styled(CustomLink)`
 `
 export const CustomMenuIcon = styled(MenuIcon)`
   order: 2;
+  font-size: 2rem;
+  justify-self: center;
   ${({ theme }) => theme.breakpoints.up("md")} {
     display: none;
+  }
+`
+export const CustomDrawer = styled(Drawer)`
+  .MuiPaper-root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+  }
+  .MuiList-root {
+  }
+  .MuiButtonBase-root {
+    font-weight: 700;
+    text-align: center;
+    span {
+      font-weight: 700;
+      font-size: 2rem;
+    }
   }
 `
 
@@ -43,9 +75,12 @@ export const MidWrapper = styled(CustomImage)`
   justify-content: center;
   //width: 100%;
   //height: 100%;
-  height: 104px;
-  width: 205px;
+  width: 100px;
   ${({ theme }) => theme.breakpoints.up("md")} {
+    display: flex;
+    justify-content: center;
+    height: 104px;
+    width: 205px;
   }
 `
 

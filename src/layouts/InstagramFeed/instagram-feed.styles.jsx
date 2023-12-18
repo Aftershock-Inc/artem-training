@@ -53,8 +53,11 @@ export const LeftWrapper = styled.div`
 `
 
 export const RightWrapper = styled.div`
-  display: flex;
-  flex-direction: row-reverse;
+  display: none;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 `
 
 export const Button = styled(CustomButton)`

@@ -9,29 +9,31 @@ import TwitterIcon from "@mui/icons-material/Twitter"
 
 const Header = () => {
   return (
-    <S.TopWrapper>
-      <Container maxWidth="xl">
-        <S.Wrapper>
-          <S.LeftWrapper>
-            <S.Link>Location 1 – MA: (413) 650-250</S.Link>
-            <S.Link>Location 2 – MA: (413) 650-250</S.Link>
-            <S.Link>Location 3 – MA: (413) 650-250</S.Link>
-          </S.LeftWrapper>
-          <S.RightWrapper>
-            <S.IconLink>
-              <InstagramIcon />
-            </S.IconLink>
-            <S.IconLink>
-              <FacebookIcon />
-            </S.IconLink>
-            <S.IconLink>
-              <TwitterIcon />
-            </S.IconLink>
-          </S.RightWrapper>
-        </S.Wrapper>
-      </Container>
+    <>
+      <S.TopWrapper>
+        <S.CustomContainer maxWidth="xl">
+          <S.Wrapper>
+            <S.LeftWrapper>
+              <S.Link>Location 1 – MA: (413) 650-250</S.Link>
+              <S.Link>Location 2 – MA: (413) 650-250</S.Link>
+              <S.Link>Location 3 – MA: (413) 650-250</S.Link>
+            </S.LeftWrapper>
+            <S.RightWrapper>
+              <S.IconLink>
+                <InstagramIcon />
+              </S.IconLink>
+              <S.IconLink>
+                <FacebookIcon />
+              </S.IconLink>
+              <S.IconLink>
+                <TwitterIcon />
+              </S.IconLink>
+            </S.RightWrapper>
+          </S.Wrapper>
+        </S.CustomContainer>
+      </S.TopWrapper>
       <MainNav />
-    </S.TopWrapper>
+    </>
   )
 }
 

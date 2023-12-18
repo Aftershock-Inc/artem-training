@@ -1,14 +1,17 @@
 import styled from "@emotion/styled"
 import { CustomLink } from "../custom-link/custom-link.styles"
+import { Container } from "@mui/material"
 
 export const TopWrapper = styled.div`
+  //display: none;
   background-color: #003400;
-  padding: 0px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
+`
+
+export const CustomContainer = styled(Container)`
+  display: none;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    display: block;
+  }
 `
 
 export const TopNavItem = styled.span`
@@ -29,6 +32,7 @@ export const TopNavLogos = styled.div`
 `
 
 export const Wrapper = styled.div`
+  dsiplay: none;
   display: flex;
   justify-content: center;
   align-items: center;

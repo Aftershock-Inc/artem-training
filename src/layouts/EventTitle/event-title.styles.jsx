@@ -71,7 +71,8 @@ export const Image = styled(CustomImage)`
 
 export const VectorPalm = styled(PalmSVG)`
   width: 100%;
-  height: 100%;
+  //height: 100%;
+
   position: absolute;
   top: 0;
   left: 50%;
