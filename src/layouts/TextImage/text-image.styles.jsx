@@ -13,7 +13,7 @@ export const LeftWrapper = styled.div`
 export const ContentWrapper = styled.div``
 
 export const RightWrapper = styled.div`
-  flex-direction: column;
+  //flex-direction: column;
 `
 
 export const Title = styled.h2`
@@ -68,10 +68,19 @@ export const Link = styled.a`
 
 export const Image = styled(CustomImage)`
   width: 100%;
-  height: 100%;
-  min-width: 722px;
+  //height: 100%;
+  //min-width: 722px;
 
   img {
     object-fit: contain !important;
+  }
+
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    width: 50vw;
+    height: 100%;
+    min-width: 722px;
+    img {
+      object-fit: contain !important;
+    }
   }
 `

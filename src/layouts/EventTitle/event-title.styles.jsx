@@ -5,8 +5,12 @@ import SectionWrapper from "../../components/section-wrapper/section-wrapper.com
 export const Wrapper = styled(SectionWrapper)`
   background-color: #f8fdf7;
   position: relative;
-  padding-top: 0px;
+  padding-top: 2rem;
   padding-bottom: 0px;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    padding-top: 0rem;
+    overflow: hidden;
+  }
 `
 
 export const LeftWrapper = styled.div`
@@ -37,7 +41,7 @@ export const Title = styled.h2`
   font-size: 64px;
   font-family: "Heebo";
   font-weight: 700;
-  line-height: 26px;
+  line-height: 64px;
   align-self: flex-start;
   padding-bottom: 1rem;
 `
@@ -61,12 +65,23 @@ export const Link = styled.a`
 `
 
 export const Image = styled(CustomImage)`
-  width: 100%;
-  height: 100%;
-  min-width: 722px;
-  img {
-    object-fit: contain !important;
-  }
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    width: 100%;
+    //height: 100%;
+    //min-width: 722px;
+
+    img {
+      object-fit: contain !important;
+    }
+
+    ${({ theme }) => theme.breakpoints.up("md")} {
+      width: 50vw;
+      height: 100%;
+      min-width: 722px;
+      img {
+        object-fit: contain !important;
+      }
+    }
 `
 
 export const VectorPalm = styled(PalmSVG)`
