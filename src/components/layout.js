@@ -8,16 +8,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "../components/header/header.component"
-import {AppContainer} from "../styles/app.styles"
+import { AppContainer } from "../styles/app.styles"
 import Footer from "./footer/footer.component"
+
+import AgeVerification from "./age-verification/age-verification.component"
 
 const Layout = ({ children }) => {
   return (
     <>
+      <AgeVerification />
       <Header />
-      <AppContainer>
-          {children}
-      </AppContainer>
+      <AppContainer>{children}</AppContainer>
       <Footer />
     </>
   )
