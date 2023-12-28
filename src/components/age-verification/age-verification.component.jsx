@@ -34,7 +34,7 @@ function AgeVerification() {
   }
   const staticQuery = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "logo.png" }) {
+      logo: file(relativePath: { eq: "footer-palm-logo.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -50,24 +50,23 @@ function AgeVerification() {
         aria-labelledby="age-verification-title"
         aria-describedby="age-verification-description"
       >
-        <DialogTitle id="age-verification-title">Age Verification</DialogTitle>
-        <S.LogoImage img={staticQuery.logo} />
+        <S.LogoBlack />
         <DialogContent>
-          <DialogContentText id="age-verification-description">
+          <S.CustomDialogContentText id="age-verification-description">
             Are you 21 years old or older?
-          </DialogContentText>
-          {showUnderageMessage && (
-            <Typography color="red">You are not old enough yet.</Typography>
-          )}
+          </S.CustomDialogContentText>
         </DialogContent>
-        <DialogActions>
-          <Button onClick={handleDisagree} color="secondary">
+        <S.CustomDialogActions>
+          <S.CustomButton onClick={handleDisagree} color="secondary">
             No
-          </Button>
-          <Button onClick={handleAgree} color="primary" autoFocus>
+          </S.CustomButton>
+          <S.CustomButton onClick={handleAgree} color="primary">
             Yes
-          </Button>
-        </DialogActions>
+          </S.CustomButton>
+        </S.CustomDialogActions>
+        {showUnderageMessage && (
+          <Typography color="red">You are not old enough yet.</Typography>
+        )}
       </S.CustomDialog>
     </div>
   )

@@ -163,6 +163,14 @@ const wordpress = css`
 `
 
 export const GlobalStyles = theme => css`
+  @font-face {
+    font-family: "Soe";
+    src: url("/fonts/Soe-Regular.otf") format("opentype");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+  }
+
   .tl-edges {
     overflow: unset !important;
   }
